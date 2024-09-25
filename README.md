@@ -1,6 +1,6 @@
 # Message bus queue connectors
 This is the package for the message bus queue connectors component for LoopBack 4 applications.
-It provides components to work with queues such as SQS, Redis(NodeBull)
+It provides components to work with queues such as SQS, BullMq
 
 [![LoopBack](https://github.com/loopbackio/loopback-next/raw/master/docs/site/imgs/branding/Powered-by-LoopBack-Badge-(blue)-@2x.png)](http://loopback.io/)
 
