@@ -1,10 +1,11 @@
-import {inject, Provider} from '@loopback/core';
-import {ILogger, LOGGER} from '@sourceloop/core';
 import {
   SendMessageCommand,
   SendMessageCommandInput,
   SQSClient,
 } from '@aws-sdk/client-sqs';
+import {inject, Provider} from '@loopback/core';
+import {ILogger, LOGGER} from '@sourceloop/core';
+import {ErrorKeys} from '../error-keys';
 import {SqsClientBindings} from '../sqskeys';
 import {
   IStreamDefinitionSQS,
@@ -12,7 +13,6 @@ import {
   SqsConfig,
   SqsSendMessageOptions,
 } from '../sqstypes';
-import {ErrorKeys} from '../error-keys';
 
 /* A factory provider that creates a producer factory
    which sends messages to an SQS queue using AWS SDK v3 */
